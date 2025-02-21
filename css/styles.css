@@ -102,11 +102,29 @@ p {
   color: #2e2f42;
 }
 
+.header-item-studio {
+  color: #404bbf;
+}
+
+.header-item-studio::after {
+  display: inline-block;
+  content: '';
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  position: absolute;
+  bottom: 0;
+}
+
 .header-list-item-link {
+  position: relative;
   font-weight: 500;
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .address {
@@ -128,6 +146,14 @@ p {
 .section-hero {
   background: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
 }
 
 .hero-title {
@@ -137,7 +163,6 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  background-color: #2e2f42;
   max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
@@ -177,6 +202,18 @@ p {
 
 .aboutus-list-item {
   width: calc((100% - 72px) / 4);
+}
+
+.aboutus-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
 }
 
 .subtitle {
@@ -238,6 +275,23 @@ p {
 
 .team-text {
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-social-icon-wrap {
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.team-social-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50%;
+  background-color: #4d5ae5;
 }
 /* #endregion Section Our team */
 
